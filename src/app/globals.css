@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom CSS directly using Tailwind classes */
+body {
+  @apply text-black dark:text-white transition-colors duration-500;
+  @apply dark:bg-black;
+  @apply bg-white;
+}
+
+/* Custom Utilities */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
